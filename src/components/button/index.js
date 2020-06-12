@@ -114,6 +114,7 @@ export default class Button extends PureComponent {
       backgroundColor: disableAnimation.interpolate({
         inputRange: [0, 1],
         outputRange: [color, disabledColor],
+        useNativeDrive:true,
       }),
     };
 
@@ -126,6 +127,7 @@ export default class Button extends PureComponent {
       opacity: focusAnimation.interpolate({
         inputRange: [0, 1],
         outputRange: [0, shadeOpacity],
+        useNativeDrive:true,
       }),
     };
 

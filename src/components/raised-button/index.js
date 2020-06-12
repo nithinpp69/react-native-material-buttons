@@ -36,11 +36,13 @@ export default class RaisedButton extends PureComponent {
         shadowOpacity: disableAnimation.interpolate({
           inputRange: [0, 1],
           outputRange: [0.30, 0],
+          useNativeDrive:true,
         }),
 
         shadowRadius: animation.interpolate({
           inputRange: [-1, 0, 1],
           outputRange: [0, 2, 4],
+          useNativeDrive:true,
         }),
 
         shadowOffset: {
@@ -49,6 +51,7 @@ export default class RaisedButton extends PureComponent {
           height: animation.interpolate({
             inputRange: [-1, 0, 1],
             outputRange: [0, 1, 2],
+            useNativeDrive:true,
           }),
         },
       },
@@ -57,6 +60,7 @@ export default class RaisedButton extends PureComponent {
         elevation: animation.interpolate({
           inputRange: [-1, 0, 1],
           outputRange: [0, 2, 8],
+          useNativeDrive:true,
         }),
       },
     });

@@ -47,6 +47,7 @@ export default class RaisedTextButton extends PureComponent {
       color: disableAnimation.interpolate({
         inputRange: [0, 1],
         outputRange: [titleColor, disabledTitleColor],
+        useNativeDrive:true,
       }),
     };
 

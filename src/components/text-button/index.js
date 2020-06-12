@@ -53,6 +53,7 @@ export default class TextButton extends PureComponent {
       color: disableAnimation.interpolate({
         inputRange: [0, 1],
         outputRange: [titleColor, disabledTitleColor],
+        useNativeDrive:true,
       }),
     };
 
